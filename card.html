@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>THE WORLD IN ONE DAY · 18 NOV 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    width: 1024px; height: 1024px;
+    overflow: hidden;
+    background: #0a1622;
+    color: #ffffff;
+    font-family: "DejaVu Sans", sans-serif;
+  }
+  .page {
+    width: 1024px; height: 1024px;
+    padding: 13px 20px 11px 20px;
+    display: flex; flex-direction: column;
+  }
+
+  /* ---------- 1. MASTHEAD ---------- */
+  .mast { display: flex; align-items: flex-end; justify-content: space-between; }
+  .brand {
+    color: #f4a261;
+    font-size: 13.5px; font-weight: bold;
+    letter-spacing: 0.22em;
+    padding-bottom: 13px;
+    white-space: nowrap;
+  }
+  .date {
+    font-size: 80px; font-weight: bold;
+    line-height: 0.84;
+    letter-spacing: -0.028em;
+    white-space: nowrap;
+  }
+  .rule-thick { height: 3px; background: #f4a261; margin-top: 9px; }
+  .strap {
+    margin-top: 6px;
+    font-size: 12.5px; font-weight: bold;
+    letter-spacing: 0.155em;
+    color: #c9dceb;
+    white-space: nowrap;
+  }
+  .strap b { color: #f4a261; }
+
+  /* ---------- 2. MAP STRIP ---------- */
+  .mapwrap {
+    margin-top: 9px;
+    height: 156px;
+    background: #0d1b2a;
+    border-top: 1px solid #1b3350;
+    border-bottom: 1px solid #1b3350;
+  }
+  .mapwrap svg { display: block; width: 100%; height: 156px; }
+
+  /* ---------- 3. STORIES ---------- */
+  .stories {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: 390px 314px 280px;
+    column-gap: 0;
+    margin-top: 8px;
+    min-height: 0;
+  }
+  .col { display: flex; flex-direction: column; }
+  .col:not(:last-child) { padding-right: 17px; }
+  .sec + .sec { margin-top: 8px; }
+  .sec-label {
+    color: #f4a261;
+    font-size: 10px; font-weight: bold;
+    letter-spacing: 0.2em;
+    border-bottom: 1px solid rgba(244,162,97,0.55);
+    padding-bottom: 2px;
+    margin-bottom: 1px;
+    white-space: nowrap;
+  }
+  .hl {
+    font-size: 15.9px;
+    line-height: 1.16;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255,255,255,0.13);
+  }
+  .hl:last-child { border-bottom: 0; }
+
+  /* equal padding per column, sized so all three columns end on one baseline */
+  .c1 .hl { padding: 6.65px 0 6.65px 0; }
+  .c2 .hl { padding: 7.15px 0 7.15px 0; }
+  .c3 .hl { padding: 7.1px 0 7.1px 0; }
+
+  /* ---------- 4. FOOTER ---------- */
+  .foot {
+    margin-top: 6px;
+    border-top: 2px solid #f4a261;
+    padding-top: 5px;
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 11px; font-weight: bold;
+    letter-spacing: 0.13em;
+    white-space: nowrap;
+  }
+  .foot .l { color: #f4a261; }
+  .foot .r { color: #9fb6c9; font-size: 10px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 1. MASTHEAD -->
+  <div class="mast">
+    <div class="brand">THE WORLD IN ONE DAY</div>
+    <div class="date">18 NOV 2026</div>
+  </div>
+  <div class="rule-thick"></div>
+  <div class="strap">WEDNESDAY 18 NOVEMBER 2026 · <b>36 STORIES</b> · SIX CONTINENTS</div>
+
+  <!-- 2. WORLD MAP STRIP -->
+  <div class="mapwrap">
+    <svg viewBox="0 0 1000 170" preserveAspectRatio="none" role="img" aria-label="World map with six continents">
+      <g fill="#16304a" stroke="#2b5578" stroke-width="1.1" stroke-linejoin="round">
+        <!-- North America -->
+        <path d="M33,30 L111,24 L236,22 L292,27 L333,47 L347,50 L319,52 L306,55 L292,63 L275,74 L231,73 L208,80 L181,69 L153,58 L153,49 L125,38 L69,36 L40,34 Z"/>
+        <!-- South America -->
+        <path d="M278,91 L328,91 L361,102 L403,108 L389,126 L353,139 L319,151 L306,162 L300,157 L306,135 L283,118 L275,107 Z"/>
+        <!-- Europe -->
+        <path d="M472,36 L500,23 L540,22 L583,24 L611,49 L578,57 L528,60 L494,61 L472,53 Z"/>
+        <!-- Africa -->
+        <path d="M453,80 L500,69 L533,61 L589,68 L619,89 L642,90 L617,103 L597,124 L569,139 L550,139 L533,122 L525,97 L478,96 L453,86 Z"/>
+        <!-- Middle East -->
+        <path d="M594,60 L622,58 L653,61 L669,74 L658,86 L631,88 L619,85 L600,71 Z"/>
+        <!-- Asia -->
+        <path d="M611,47 L667,41 L750,19 L889,22 L972,27 L944,36 L903,41 L889,52 L861,63 L839,69 L833,78 L806,80 L792,91 L778,96 L764,85 L744,78 L722,93 L700,80 L683,74 L667,69 L633,69 L625,58 L611,55 Z"/>
+        <!-- Oceania -->
+        <path d="M814,126 L861,115 L903,118 L925,132 L917,144 L875,140 L828,139 L814,130 Z"/>
+      </g>
+
+      <!-- six amber markers + labels -->
+      <g fill="#f4a261">
+        <circle cx="190" cy="52" r="4.2"/><circle cx="505" cy="42" r="3.6"/>
+        <circle cx="512" cy="122" r="4.2"/><circle cx="643" cy="74" r="3.4"/>
+        <circle cx="800" cy="52" r="4.2"/><circle cx="868" cy="129" r="4.2"/>
+      </g>
+      <g fill="#f4a261" font-family="DejaVu Sans, sans-serif" font-size="11" font-weight="bold" letter-spacing="1.4">
+        <text x="190" y="44" text-anchor="middle">AMERICAS</text>
+        <text x="505" y="21" text-anchor="middle">EUROPE</text>
+        <text x="512" y="143" text-anchor="middle">AFRICA</text>
+        <text x="648" y="112" text-anchor="start">MIDDLE EAST</text>
+        <text x="800" y="44" text-anchor="middle">ASIA</text>
+        <text x="868" y="160" text-anchor="middle">OCEANIA</text>
+      </g>
+      <g stroke="#f4a261" stroke-width="0.9" stroke-dasharray="3 3" opacity="0.55">
+        <line x1="643" y1="78" x2="650" y2="100"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- 3. STORIES -->
+  <div class="stories">
+
+    <!-- COLUMN 1 · 13 headlines -->
+    <div class="col c1">
+      <div class="sec">
+        <div class="sec-label">AMERICAS</div>
+        <div class="hl">Mary Peltola beats Dan Sullivan in Alaska: Democrats reach 56 Senate seats</div>
+        <div class="hl">Rubio: "zero evidence" the day's tech outages are linked</div>
+        <div class="hl">Nationwide ground stop: FAA had signed off on repair work</div>
+        <div class="hl">Internet outages hit Apple, Google and government systems</div>
+        <div class="hl">White House pulls Heidi Overton's FDA nomination</div>
+        <div class="hl">Waymo suspends driverless freeway rides after California ban</div>
+        <div class="hl">US officially loses measles elimination status after 26 years</div>
+        <div class="hl">Grand Theft Auto VI arrives after a 13-year wait</div>
+        <div class="hl">Powerful Bay Area storm brings flood risk</div>
+        <div class="hl">Trump administration presses on in US attorneys legal fight</div>
+      </div>
+      <div class="sec">
+        <div class="sec-label">OCEANIA</div>
+        <div class="hl">Australia's wages grow fastest since 2023, but prices climb faster</div>
+        <div class="hl">One Nation's plan to slash the refugee program denounced</div>
+        <div class="hl">Cricket Australia opens a players' forum after Sandpapergate</div>
+      </div>
+    </div>
+
+    <!-- COLUMN 2 · 12 headlines -->
+    <div class="col c2">
+      <div class="sec">
+        <div class="sec-label">EUROPE</div>
+        <div class="hl">UK inflation rises to 3.6% as fuel prices hit record</div>
+        <div class="hl">Lammy urges Burnham to fight next election on rejoining the EU</div>
+        <div class="hl">Brexit work-travel rules need urgent fix, business leaders say</div>
+        <div class="hl">Burnham weighs national insurance cuts for youth jobs</div>
+        <div class="hl">UK police leadership fast-tracked after two-tier policing row</div>
+        <div class="hl">Body in Derry bog was decapitated 2,000 years ago, coroner finds</div>
+      </div>
+      <div class="sec">
+        <div class="sec-label">MIDDLE EAST</div>
+        <div class="hl">Iran strikes Kuwait and Bahrain, escalating the Strait fight</div>
+        <div class="hl">Australia sanctions Israeli settlers over West Bank violence</div>
+        <div class="hl">Knesset elects Matan Kahana as speaker in boost to Eisenkot</div>
+        <div class="hl">Houthis tighten grip on Yemen as war funding grows</div>
+        <div class="hl">Ships risk the Strait of Hormuz with limited US protection</div>
+        <div class="hl">Board of Peace warns the Gaza ceasefire may collapse</div>
+      </div>
+    </div>
+
+    <!-- COLUMN 3 · 11 headlines -->
+    <div class="col c3">
+      <div class="sec">
+        <div class="sec-label">ASIA</div>
+        <div class="hl">Xi welcomes Trump in China as APEC opens in Shenzhen</div>
+        <div class="hl">Xi pitches free trade as Trump's tariffs disrupt global trade</div>
+        <div class="hl">Putin tells APEC Europe is in "humiliating decline"</div>
+        <div class="hl">Nvidia rebuts calls to reinstate Jensen Huang after record sales</div>
+        <div class="hl">South Korea's university exams upended by AI cheating scandal</div>
+        <div class="hl">India beat Pakistan to win the SAFF Championship</div>
+        <div class="hl">Arsenic pollution from Myanmar prompts Thai water scramble</div>
+      </div>
+      <div class="sec">
+        <div class="sec-label">AFRICA</div>
+        <div class="hl">Ghana's new $60m presidential jet sparks public outrage</div>
+        <div class="hl">Africa's journalists pushed to the brink: hungry and unpaid</div>
+        <div class="hl">DR Congo's rival peace efforts fail to halt eastern violence</div>
+        <div class="hl">Africa's economic future cannot rest on Washington</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 4. FOOTER -->
+  <div class="foot">
+    <div class="l">18 NOVEMBER 2026</div>
+    <div class="r">AMERICAS · EUROPE · AFRICA · MIDDLE EAST · ASIA · OCEANIA</div>
+  </div>
+
+</div>
+</body>
+</html>
